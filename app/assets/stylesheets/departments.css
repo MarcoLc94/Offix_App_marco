@@ -1,0 +1,22 @@
+.department-card {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.department-card__content {
+  padding: 0.5em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.department-card__image {
+  width: 100%;
+}

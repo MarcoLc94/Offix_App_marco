@@ -1,0 +1,27 @@
+.employee-card {
+  padding: 0.5em 1em;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card__header {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.employee-card__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.employee-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.employee-card__avatar {
+  max-width: 64px;
+}
