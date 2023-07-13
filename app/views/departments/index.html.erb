@@ -1,15 +1,18 @@
 <section class ="section">
  <div class ="container">
-  <h1>Departments</h1>
+  <h1 class="heading mb-4">Departments</h1>
   <div>
    <% @departments.each do |department| %>
-    <div>
-     <div>
+    <div class="card-list">
+     <div class="department-card">
+     <div class="department-card__content">
       <%= link_to(department.name, department_path(department)) %>
+      <span><%=department.employees.count%> employees</span>
      </div>
      <div>
       <%= link_to("Edit", department_path(department)) %>
       <%= link_to("Destroy", department_path(department), data: { turbo_method: :delete, turbo_confirm: "Seguro?"}) %>
+     </div>
      </div>
     </div>
    <% end %>
