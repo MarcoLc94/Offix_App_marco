@@ -7,6 +7,10 @@
      <div>
       <%= link_to(department.name, department_path(department)) %>
      </div>
+     <div>
+      <%= link_to("Edit", department_path(department)) %>
+      <%= link_to("Destroy", department_path(department), data: { turbo_method: :delete, turbo_confirm: "Seguro?"}) %>
+     </div>
     </div>
    <% end %>
   </div>
