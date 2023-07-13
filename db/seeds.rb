@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Employee.destroy_all
+Department.destroy_all
+
+department = Department.create(name: "Engineering", description:"This is a great department")
+employee = Employee.create(name:"Testino", nationality:"Peru", role:"Software Developer", birth_date: 31.years.ago, department:"engineering") 

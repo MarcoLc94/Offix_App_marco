@@ -1,0 +1,14 @@
+<section class ="section">
+ <div class ="container">
+  <h1>Departments</h1>
+  <div>
+   <% @departments.each do |department| %>
+    <div>
+     <div>
+      <%= link_to(department.name, department_path(department)) %>
+     </div>
+    </div>
+   <% end %>
+  </div>
+ </div>
+</section>
